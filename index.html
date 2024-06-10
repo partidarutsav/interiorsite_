@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <title>Interior Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <style>
+        .gallery a {
+            text-decoration: none; /* Ensure no underline */
+            display: block;
+            margin: 10px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .gallery img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .gallery .desc {
+            color: #e100ff;
+            border: 1px solid;
+            padding: 10px;
+            text-align: center;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .gallery a:hover {
+            transform: scale(1.05);
+            border-color: #84039e;
+            color: white;
+        }
+
+        .gallery a:hover .desc {
+            background-color: #7a4e97;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2> Dream Interior Explorer</h2>
+        <nav>
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="bathroom.html">Bathroom</a></li>
+                <li><a href="livingroom.html">Living Room</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Welcome to Our Interior Design Services</h2>
+        <p>Explore our beautiful designs for different rooms in your home.</p>
+        <div class="gallery">
+            <a href="bedroom.html" style="text-decoration: none;">
+                <img src="images/bedroom1.jpg" alt="Bedroom Design">
+                <div class="desc" style= "order: 1px solid; ">Bedroom</div>
+            </a>
+            <a href="bathroom.html" style="text-decoration: none;">
+                <img src="images/19f21857163adcee4349166af11ae145.jpg" alt="Bathroom Design">
+                <div class="desc" style=" border: 1px solid; ">Bathroom</div>
+            </a>
+            <a href="livingroom.html" style="text-decoration: none;">
+                <img src="images/th (2).jpg" alt="Living Room Design">
+                <div class="desc" style=" border: 1px solid; ">Living Room</div>
+            </a>
+            <a href="kitchen.html" style="text-decoration: none;">
+                <img src="images/Point-grey-kitchen-interior-design-project.jpg" alt="Kitchen Design">
+                <div class="desc" style=" border: 1px solid; ">Kitchen</div>
+            </a>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Your Dream Design || Design by Utsav Patel</p>
+    </footer>
+</body>
+</html>

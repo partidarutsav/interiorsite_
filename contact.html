@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* body{
+            background-color: rgb(191, 108, 230);
+        } */
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #db7cd3; /* Set the background color to #db7cd3 */
+    justify-content: center;
+    align-items: center;
+        }
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior Designer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="bathroom.html">Bathroom</a></li>
+                <li><a href="livingroom.html">Living Room</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        <h1>Contact Us</h1>
+        <h4 style="text-align: center;">Reach out for a new project or just say hello</h4>
+    <div class="container">
+        
+        <h2 style="text-align: center;">SEND US A MESSAGE</h2>
+        <!-- <form id="contactForm"> -->
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="c584bba4-6fd9-4490-ac08-be482aacec16">
+                
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <input type="hidden" name="redirect" value="https://web3forms.com/success">
+            <button type="submit" style="background-color: #db7cd3;">Submit</button>
+        </form>
+        <div id="responseMessage"></div>
+    </div>
+    <div class="contact-info">
+        <h2>Contact Information</h2>
+        <h5 style="color: white;"><strong>Where to Find Us</strong></h5><p> 123 Interior Design St, Design City, Gujarat</p>
+        <h5 style="color: white;"><strong>Email Us At</strong></h5> <p>contact@interiordesigner.com</p>
+        <h5 style="color: white;"><strong>Call Us At</strong></h5> <p>+91 - 9876543210</p>
+    </div>
+    <!-- <footer>
+        <p>&copy; 2024 Interior Designer</p>
+    </footer> -->
+    <script src="scripts.js"></script>
+</body>
+</html>

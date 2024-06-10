@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedroom Design</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        figure {
+            text-align: center;
+            margin: 0;
+            position: relative; /* Add position relative to position caption */
+        }
+
+        figure img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        figcaption {
+            margin-top: 8px;
+            font-size: 16px;
+            color: #333;
+            position: absolute; /* Position the caption relative to the figure */
+            bottom: 0; /* Position the caption at the bottom */
+            left: 0; /* Align the caption to the left */
+            width: 100%; /* Make the caption width same as the image */
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 8px; /* Add padding */
+            box-sizing: border-box; /* Include padding and border in width calculation */
+            opacity: 0; /* Initially hide the caption */
+            transition: opacity 0.3s; /* Add smooth transition effect */
+        }
+
+        figure:hover figcaption {
+            opacity: 1; /* Show the caption on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interior Designer</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bedroom.html">Bedroom</a></li>
+                <li><a href="bathroom.html">Bathroom</a></li>
+                <li><a href="livingroom.html">Living Room</a></li>
+                <li><a href="kitchen.html">Kitchen</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Bedroom Designs</h2>
+        <p>Explore our modern and comfortable bedroom designs.</p>
+        <div class="gallery">
+           
+            <figure>
+                <img src="images/contemporary-bedroom-interior-design.jpg" alt="Bedroom Design 1">
+                <figcaption>Bedroom Design 1</figcaption>
+            </figure>
+            <figure>
+                <img src="images/fa5a701d699f1b5a9be516365540fae4.jpg" alt="Bedroom Design 2">
+                <figcaption>Bedroom Design 2</figcaption>
+            </figure>
+            <figure>
+                <img src="images/3fcfdd5723a9423eab0af73bb9150ce0.jpg" alt="Bedroom Design 3">               
+                <figcaption>Bedroom Design 3</figcaption>
+            </figure>
+        </div>
+    </main>
+    <!-- <footer>
+        <p>&copy; 2024 Interior Designer</p>
+    </footer> -->
+</body>
+</html>
